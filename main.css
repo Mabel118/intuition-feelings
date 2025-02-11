@@ -1,0 +1,77 @@
+body {
+  background-color: #EAE5E5;
+}
+.center_quote {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.8rem;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(82, 34, 34);
+}
+
+.glow {
+  color: #ffffff;
+  font-weight: bold; 
+  animation: glow 2s ease-in-out infinite alternate;
+  font-size: 18px;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #8f0000, 0 0 30px #d08e8e, 0 0 40px #dca5a5, 0 0 50px #bf7272, 0 0 60px #e46f6f, 0 0 70px #b53636, 0 0 100px #990000;
+  }
+}
+.glow:hover {
+  font-size: 20px;
+  transition: 1s;
+  cursor: pointer;
+}
+.glow:not(:hover) {
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 935px) {
+  .center_quote{
+    font-size: 10px;
+  }
+  .glow {
+    color: #ffffff;
+    font-weight: bold; 
+    animation: glow 2s ease-in-out infinite alternate;
+    font-size: 10px;
+  .glow:hover {
+    font-size: 13px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .glow:not(:hover) {
+    font-size: 10px;
+    transition: 0.5s;
+  }
+}
+}
+
+#phrase-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.phrase {
+  position: absolute;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
