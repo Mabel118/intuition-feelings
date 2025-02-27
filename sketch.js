@@ -9,7 +9,7 @@
       "No more playing small. It’s time to go all in",
       "I just need to trust my gut, even when it doesn’t make sense",
       "To open my own cozy flower café 🌸",
-      "One day, I’ll drop an album that actually hits",
+      "One day, I’ll drop an album that actually hits.",
       "Owning my own music studio—no boss, just me",
       "I just want to** write that book I keep talking about",
       "Someday, my sketches will** turn into a real fashion brand",
