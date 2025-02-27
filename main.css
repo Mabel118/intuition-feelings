@@ -1,6 +1,12 @@
 body {
   background: #EAE5E5;
   transition: background 2s ease-in-out;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #content-wrapper {
@@ -44,19 +50,21 @@ body {
 }
 
 #phrase-container {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   pointer-events: none;
 }
 
-.phrase {
+.spiral-phrase {
   position: absolute;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   color: white;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
-  white-space: nowrap;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity 1s ease-in;
 }
